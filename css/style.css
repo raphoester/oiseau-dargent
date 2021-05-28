@@ -1,5 +1,349 @@
 @import url(/font/stylesheet.css);
 
-h2 {
+/* Reset du CSS */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------------------------------------------------ */
+
+.header {
+  margin: 2rem 0 1rem;
+  position: relative;
+}
+
+.header-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10rem;
+}
+
+@media (max-width: 768px) {
+}
+.top-list {
+  display: flex;
+}
+.top-list li {
+  margin-left: 2rem;
+  padding-bottom: 0.2em;
+}
+
+.top-weather p {
+  font-size: 12.031px;
+  text-transform: none;
+  line-height: 15px;
+  letter-spacing: 0.4px;
+  color: #5d534f;
   font-family: 'HK Grotesk';
+}
+.top-weather .weather-icon {
+  width: 3rem;
+}
+a {
+  text-decoration: none;
+}
+
+h3 {
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.342857px;
+  text-transform: uppercase;
+  color: #003b5c;
+}
+
+.nav {
+  width: 100%;
+  border-top: 1px solid #e5dbd1;
+  margin: 1rem 0 0;
+  height: auto;
+  background-color: inherit;
+  position: inherit;
+  margin-top: 1rem;
+}
+
+.nav-list .nav-item h3 {
+  color: #003b5c;
+  font-size: inherit;
+  display: block;
+  position: relative;
+  padding: 0.5em 0;
+}
+.nav-list .nav-item h3::after {
+  background-color: #e74832;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.nav-list li {
+  margin-left: 5%;
+}
+
+.container {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  justify-content: space-between;
+  height: 700px;
+}
+
+h2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 39px;
+  text-align: center;
+  letter-spacing: -0.4px;
+
+  color: #003b5c;
+}
+
+p {
+  font-family: Libre Baskerville;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  /* or 175% */
+
+  text-align: center;
+  letter-spacing: -0.4px;
+
+  color: #5d534f;
+  margin: 0 auto;
+  max-width: 46ch;
+}
+
+.jaguar {
+  flex: 1.4 1;
+  position: relative;
+  margin-right: 2rem;
+}
+
+.jaguar img {
+  height: 475px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.whisky {
+  flex: 1 1;
+  position: relative;
+}
+
+.whisky img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.text {
+  width: 75%;
+  text-align: center;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.title-container {
+  position: relative;
+}
+
+.title-container h6 {
+  width: 70%;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 10%;
+  padding: 3%;
+  font-family: HK Grotesk;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.031px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.4px;
+  color: #003b5c;
+}
+
+.alternante {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12.031px;
+  line-height: 15px;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.4px;
+
+  color: rgba(93, 83, 79, 0.6);
+}
+
+.whisky .text {
+  bottom: 25%;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .top-weather {
+    margin-right: 0;
+  }
+
+  .top-weather {
+    display: none;
+  }
 }
